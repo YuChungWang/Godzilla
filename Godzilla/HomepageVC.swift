@@ -6,17 +6,27 @@
 //
 
 import UIKit
+import SnapKit
 
 class HomepageVC: UIViewController {
+    var btn = UIButton(frame: .zero)
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = .purple
-
+        self.view.backgroundColor = .white
+    
+        btn.backgroundColor = .blue
+        self.view.addSubview(btn)
+        btn.snp.makeConstraints({
+            $0.bottom.equalToSuperview().offset(-40)
+            $0.centerX.equalToSuperview()
+            $0.width.equalTo(300)
+            $0.height.equalTo(80)
+        })
         // Do any additional setup after loading the view.
     }
-    
+
 
     /*
     // MARK: - Navigation
