@@ -12,9 +12,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func applicationDidFinishLaunching(_ application: UIApplication) {
-        let vc = UIViewController()
-        
-        vc.view.backgroundColor = .yellow
+        let vc = HomepageVC()
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.rootViewController = vc
