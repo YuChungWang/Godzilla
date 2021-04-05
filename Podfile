@@ -8,7 +8,7 @@ target 'Godzilla' do
   # Pods for Godzilla
 
   pod 'SnapKit'
-
+  pod 'SwiftLint'
 
 
 

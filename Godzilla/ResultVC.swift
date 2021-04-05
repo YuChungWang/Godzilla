@@ -35,4 +35,3 @@ extension ResultVC {
         self.lb.text = resultArr[num]
     }
 }
-

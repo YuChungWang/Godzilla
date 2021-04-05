@@ -14,10 +14,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidFinishLaunching(_ application: UIApplication) {
         let vc = HomepageVC()
         let nc = UINavigationController(rootViewController: vc)
-        
+
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.rootViewController = nc
         self.window?.makeKeyAndVisible()
     }
 }
-
